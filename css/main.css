@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+body {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color:yellow;
+    border-radius: 7px;
+}
+
+#studentimage {
+    float: right;
+    max-width: 165px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 7px;
+    filter: drop-shadow(3px 2px 4px rgba(72, 5, 255, 0.815))
+}
+
+h1 {
+    color: rgba(8, 8, 8, 0.787);
+    margin-left: -100px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Dancing Script', cursive;;
+    font-size: 25pt;
+}
+
+h2 {
+    font-family: sans-serif;
+    border-bottom: 2px solid yellow;
+    padding-bottom: 5px;
+}
+a:hover {
+	color: red;
+}
+
+.dates,
+#copyright {
+    color: rgb(3, 3, 3);
+    text-align: center;
+}
+
+#copyright {
+    padding-top: 15px;
+}
+
+.dates {
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+
+nav {
+    padding-bottom: 60px;
+    padding-left: 60px;
+}
+
+#copyright a {
+    color: rgb(27, 7, 206);
+}
+
+#copyright a:hover {
+    color: rgb(252, 7, 7);
+}
+
+#currentDate,
+#lastUpdated {
+    color: rgb(8, 8, 8);
+}
+
+.dates {
+    font-family: monospace;
+    font-size: 1.13em;
+}
+
+@media screen and (max-width: 560px) {
+    #portrait {
+        float: none;
+        margin-left: 10px;
+    }
+
+    body {
+        max-width: 380px;
+    }
+
+    h1 {
+        padding-left: 150px;
+    }
+}
