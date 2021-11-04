@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Manrope');
+
+:root{
+    --primary-color: #202020; /*Navy */
+    --secondary-color: #E8EEF1; /*Light lime*/
+    --accent1-color: #E8EEF1; /*Light navy */
+    --accent2-color: #4B7BF5; /*Purple */
+    --background-color: #BFD7ED;
+
+    --heading-font: 'Dancing Script', cursive;
+    --paragraph-font: 'Teko', sans-serif;
+}
+html {
+    background-color: var(--background-color);
+}
+body {
+    margin: 0 auto;
+    background-color: var(--accent1-color);
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+main{
+    padding: 1em;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: var(--paragraph-font);
+}
+table, th, td {
+    border: 1px solid black;
+}
+td {
+    height: 50px;
+    text-align: center;
+}
+p {
+    font-family: var(--paragraph-font)
+}
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color); 
+}
+h3.site {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+header h1{
+    color: var(--primary-color);
+    font-size: 45px;
+}
+header h2{
+    color: var(--primary-color);
+}
+header, footer {
+    background-color: var(--accent2-color);
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+}
+footer {
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+}
+.site{
+    color: var(--accent1-color);
+}
+footer a:link, footer a:visited {
+    color: var(--secondary-color);
+}
+nav {
+    font-family: var(--heading-font);
+    font-size: 25px;
+  }
+nav ul {
+    list-style: none;
+    display: grid;
+    background: var(--secondary-color);
+    padding: 2em;
+    border-radius: 10px;
+  }
+nav a:link, nav a:visited {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--accent2-color);
+}
+#updated {
+    color: var(--secondary-color);
+}
+#headerSample {
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+}
+#navSample {
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+    font-size: 20px;
+}
+#footNav{
+    color: var(--primary-color);
+}
+
+
+
+.priority1{
+    display: none;
+}
+
+
+@media only screen and (min-width: 60em) {
+    .priority1{display: table-cell;}
+    nav ul{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}    
