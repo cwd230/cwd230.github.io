@@ -95,16 +95,17 @@ nav a:hover {
     color: var(--secondary-color);
 }
 #headerSample {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     background-color: var(--accent2-color);
 }
 #navSample {
-    color: var(--background-color);
-    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    background-color: var(--background-color);
     font-size: 20px;
 }
 #footNav{
     color: var(--primary-color);
+    background-color: var(--accent2-color);
 }
 
 
