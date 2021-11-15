@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Preston, Idaho</title>
+    <meta name="description" content="Cristians Cantarero. Preston Town Page. Class: WDD230. BYU-Idaho.">
+    <link rel="shortcut icon" href="images/weather-logo.png">
+
+</head>
+<body>
+    <div id="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <picture>
+            <img src="images/weather-logo.png" alt="Windzit logo">
+        </picture>
+        <section class="heading">
+            <h1>Windzit</h1>
+            <div class="moto">A bright adventure</div>
+            </section>
+        
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h2 class="town">Preston Idaho</h2>
+        <div class="hero-div">
+            <img src="images/bannerimage.jpg" alt="banner image" class="banner-image">
+            <section class="weather-overlay">
+                <h2>Weather Summary</h2><br>
+                <table class="currentSum">
+                    <tr>
+                        <td class="right">Currently</td><td>:</td><td class="value">Sunny</td>
+                    </tr>
+                    <tr>
+                        <td class="right">High</td><td>:</td><td class="value"> 76 &#176;F</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Wind Chill</td><td>:</td><td class="value">&#176;F</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Humidity</td><td>:</td><td class="value">69%</td>
+                    </tr>
+                    <tr>
+                        <td class="right">Wind Speed</td><td>:</td><td class="value">5 mph</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <br>
+        <div class="fiveDay"><strong>5 day forcast</strong><br><br>
+        <table>
+            <tr>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <tr>
+                <td>&#127774;<br>89 &#176;F</td>
+                <td>&#127774;<br>87 &#176;F</td>
+                <td>&#127774;<br>78 &#176;F</td>
+                <td>&#127774;<br>75 &#176;F</td>
+                <td>&#127774;<br>72 &#176;F</td>
+            </tr>
+        </table></div>
+        <br>
+        <article class="article">
+            <br>
+            <img src="images/FoundersDay.jpg" alt="Founders day image" class="foundersDay">
+            <br>
+            <h2>Founders Day Fresco</h2>
+            <br>
+            <br>
+            <p class="author">By Jamica Juarez</p>
+                <br>
+                <p class="paragraph">Content text goes here, Content text goes here, Content text goes here, Content text goes here. Content text goes here, Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here.Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here</p><br>
+                <p class="paragraph">Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here Content text goes here. Content text goes here . Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. </p>
+                <br>
+        </article>
+        <br>
+        <div class="contact">
+            <br>
+            <img src="images/map.jpg" alt="map of places" class="map">
+            <p class="location"><strong>Windzit</strong><br>
+            <i style='font-size:14px' class='fas'>&#xf3c5;</i>   51 Main st<br>
+            Preston, ID 82367
+            <br><br>
+            <i style='font-size:14px' class='fas'>&#xf095;</i> 123.000.1234
+            <br>
+            <i style="font-size:14px" class="fa">&#xf0e0;</i> Windzit@weather.com<br>
+            <br><br>
+            <img src="images/instagram.png" alt="instagram">
+            <img src="images/facebook.png" alt="facebook">
+            <img src="images/youtube.png" alt="youtube">
+            <img src="images/twitter.png" alt="twitter">
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="lastInfo">
+            &#169; Windzit | Attributions |<br class='responsive'> Cristians Cantarero
+            <div id="updated"></div>
+    </div>
+    </footer>
+    <script src="js/preston.js"></script>
+</body>
+</html>

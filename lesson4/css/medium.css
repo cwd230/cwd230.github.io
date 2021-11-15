@@ -1,0 +1,101 @@
+@media only screen and (min-width: 40em) {
+
+    :root{
+        --paragraph-font: 'Manrope', sans-serif;
+    }
+    
+    nav {
+        background: var(--primary-color); /* Old browsers */
+        
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
+        
+    }
+        
+    nav button {display: none;}
+        
+    nav ul.hide {display: block;}
+        
+    nav ul {text-align: center;}
+        
+    nav ul li{
+        display:inline;
+    }
+        
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+        display: inline-block;
+        font-size: 15px;
+    }
+    html, body {
+        background-color: var(--background-color);
+    }
+    main {
+        padding: 1em;
+    }
+    .fiveDay {
+        display: block;
+        text-align: center;
+        font-family: var(--paragraph-font);
+    }
+    .fiveDay table, th, td {
+        border: 1px solid rgb(26, 23, 240);
+        border-collapse: collapse;
+        padding: 1em;
+    }
+    .fiveDay table {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    th {
+        background-color: #BFD7ED;
+    }
+    br.responsive {
+        display: none;
+    }
+    .foundersDay {
+        float: right;
+        margin-right: .5em;
+        margin-left: .7em;
+    }
+
+    header img {
+        width: 87%;
+    }
+    .weather-overlay {
+        left: 5em;
+    }
+    .currentSum tr, .currentSum td{
+        border: none;
+        padding: 0;
+    }
+    h2 {
+        font-size: 15px;
+    }
+
+    .moto {
+        font-size: 1em;
+    }
+
+    .heading {
+        font-size: .8em;
+    }
+    main {
+        width: 100%;
+    }
+    .contact {
+        display: flex;
+    }
+    .map {
+        width: 50%;
+        display: inline;
+        border: 1px solid rgb(30, 52, 253);
+        margin: .5em;
+    }
+    .location {
+        font-size: 12px;
+        padding: .5em;
+        align-self: center;
+        margin-left: 2em;
+    }
+}
