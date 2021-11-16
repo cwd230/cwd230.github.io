@@ -55,12 +55,6 @@ if ("IntersectionObserver" in window) {
   sources.forEach(img=>{preloadSource(img)});
 }
 
-images.forEach((img) => {
-  observer.observe(img);
-});
-sources.forEach((img) => {
-observer.observe(img);
-});
 
 // const picObserver = new IntersectionObserver((entries, imgObserver) => {
 //   entries.forEach(entry => {
