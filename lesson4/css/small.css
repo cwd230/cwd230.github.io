@@ -154,10 +154,10 @@ main p, section, article{
 .hero-div {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 .weather-overlay {
-    position: absolute;
     justify-self: left;
     top: .5em;
     left: 3.5em;
