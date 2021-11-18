@@ -233,7 +233,7 @@ main p, section, article{
 }
 
 
-
+.bannerimg {margin: auto;}
 
 
 /* --------overlay------- */
@@ -241,13 +241,15 @@ main p, section, article{
 .hero-div {
     position: relative;
     display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
 }
 .weather-overlay {
-    position: absolute;
     justify-self: left;
     top: .5em;
     left: 3.5em;
+    width: 100%;
     padding: .5em;
     background: radial-gradient(#f1f9f4, #E8EEF1);
     border: 1px solid var(--accent2-color);

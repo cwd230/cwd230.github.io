@@ -83,7 +83,9 @@
     }
 
     .weather-overlay {
-        left: 15em;
+        left: 7em;
+        position: absolute;
+        width: 180px;
     }
 
 
