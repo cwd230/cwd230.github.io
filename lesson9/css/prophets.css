@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+:root{
+    --primary-color: #202020; /*Navy */
+    --secondary-color: #E8EEF1; /*Light lime*/
+    --accent1-color: #E8EEF1; /*Light navy */
+    --accent2-color: #4B7BF5; /*Purple */
+    --background-color: #BFD7ED;
+
+    --heading-font: 'Dancing Script', cursive;
+    --paragraph-font: 'Teko', sans-serif;
+}
+
+
+body {
+    text-align: center;
+}
+main {
+    margin: 10px;
+    background-color: var(--accent1-color);
+    box-shadow: 0 0 20px var(--secondary-color);
+    padding: .5rem;
+    padding-bottom: 1rem;
+}
+p {
+    font-family: var(--paragraph-font);
+    margin-top: -10px;
+}
+footer {
+    font-family: var(--paragraph-font);
+    padding: 2rem;
+    background-color: var(--accent2-color);
+}
+
+/* -------headings------- */
+
+h1{
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+h2 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+}
+header {
+    background-color: var(--accent2-color);
+    padding: 2rem;
+}
+
+/* ---------image--------- */
+img {
+    width: 50%;
+    box-shadow: 0 0 15px var(--secondary-color);
+}
+
+
+
+/* ----------grid---------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: 100%;
+}
+section {
+    margin: 5px;
+    padding-bottom: 1rem;
+    background-color: var(--background-color);
+    border: 3px solid #4B7BF5;
+}
+
+@media only screen and (min-width: 40em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
