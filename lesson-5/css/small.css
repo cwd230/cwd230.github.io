@@ -89,11 +89,11 @@ span.email::after {
 
 /* -----------nav------------ */
 
-nav ul li a:hover{background-color: black;}
+nav ul li a:hover{background-color: #BFD7ED;}
 
 nav ul.hide {display: none;}
 
-nav ul li.active a{background-color: var(--accent1-color); color: var(--primary-color);}
+nav ul li.active a{background-color: var(--accent1-color); color: var(--accent2-color);}
 
 nav ul li a {
     display: block;
@@ -127,7 +127,7 @@ nav ul {
 }
 
 nav a:link, nav a:visited {
-    color: var(--background-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
 nav a:hover {
@@ -274,10 +274,12 @@ div#pancake {
     font-family: var(--paragraph-font);
     font-size: 20px;
     padding-left: 3rem;
+    width: 480px;
+    margin: auto;
 }
 .paraframe img {
     width: 480px;
     max-width: 400px;
     padding: 1.5rem 0 3rem 3rem;
-    
+    margin: auto;
 }
