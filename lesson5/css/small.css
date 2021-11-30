@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 :root{
-    --primary-color: #202020; /*Navy */
-    --secondary-color: #E8EEF1; /*Light lime*/
-    --accent1-color: #E8EEF1; /*Light navy */
-    --accent2-color: #4B7BF5; /*Purple */
+    --primary-color: #202020; 
+    --secondary-color: #E8EEF1;
+    --accent1-color: #E8EEF1; 
+    --accent2-color: #4B7BF5;
     --background-color: #BFD7ED;
 
     --heading-font: 'Dancing Script', cursive;
