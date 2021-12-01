@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Windzit | Home</title>
+    <meta name="description" content="Cristians Cantarero. The Weather Site Home Page. Class: WDD230. BYU-Idaho.">
+    <link rel="shortcut icon" href="images/weather-logo.png">
+
+</head>
+<body>
+    <div id="pancake">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+    <header>
+        <picture class="img">
+            <source media="(max-width: 641px)" srcset="images/weather-logo83.png">
+            <source media="(max-width: 1017px)" srcset="images/weather-logo111.png">
+            <img src="images/placeholder.png" data-src="images/weather-logo.png" alt="logo">
+        </picture>
+        <section class="heading">
+            <h1>Windzit</h1>
+            <div class="moto">A bright adventure</div>
+            </section>
+        
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="../lesson-6/preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="../lesson7/stormcenter.html">Storm Center</a></li>
+                <li><a href="../lesson6/gallery-7.html">Gallery</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h2 class="page">Home</h2>
+        
+
+
+        <div class="hero-div">
+            <picture class="img">
+                <source media="(max-width: 641px)" srcset="images/placeholder.png" data-srcset="images/bannerimage307x149.jpg">
+                <source media="(max-width: 1017px)" srcset="images/placeholder.png" data-srcset="images/bannerimage614x298.jpg">
+                <img src="images/placeholder.png" data-src="images/bannerimage.jpg" alt="hero banner image"></picture>
+        </div>
+
+        <div class="town-cards"></div>
+
+        <div class="contact">
+            <picture class="img">
+                <img src="images/placeholder.png" data-src="images/map.jpg" alt="map of places" class="map">
+            </picture>
+            <p class="location"><strong>Windzit</strong><br>
+                <span class="address">&#127980; 51 Main st -- Preston, ID 82367</span>
+                <span class="phone">&#128222; 123.000.1234</span>
+                <span class="email">&#128231; Windzit@weather.com</span>
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <h2 class="wirelink"><a href="home-wireframes.html" target="_blank">Wireframes</a></h2>
+        <div class="lastInfo">
+            &#169; Windzit | Attributions |<br class='responsive'> Cristians Cantarero
+            <div id="updated"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/menupancake.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/towncards.js"></script>
+
+</body>
+</html>

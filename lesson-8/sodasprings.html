@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css-sodasprings/normalize.css">
+    <link rel="stylesheet" href="css-sodasprings/small.css">
+    <link rel="stylesheet" href="css-sodasprings/medium.css">
+    <link rel="stylesheet" href="css-sodasprings/large.css">
+    <title>Preston, Idaho</title>
+    <meta name="description" content="Cristians Cantarero. Preston Town Page. Class: WDD230. BYU-Idaho.">
+    <link rel="shortcut icon" href="images-sodasprings/weather-logo.png">
+
+
+</head>
+<body>
+    
+    <header>
+        <picture>
+            <img src="images-sodasprings/weather-logo.png" alt="Windzit logo">
+        </picture>
+        <section class="heading">
+            <h1>Windzit</h1>
+            <div class="moto">A bright adventure</div>
+            </section>
+        
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="../lesson-6/index.html">Home</a></li>
+                <li><a href="../lesson-6/preston.html">Preston</a></li>
+                <li class="active"><a href="../lesson-6/sodasprings.html">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="# ">Gallery</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h2 class="town">Soda Springs, Idaho</h2>
+        <div class="hero-div">
+            <picture class="bannerimg img">
+                <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images-sodasprings/banner307x149.jpeg">
+                <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images-sodasprings/banner614x298.jpeg">
+                <img src="images-sodasprings/banner614x298.jpeg" data-src="images-sodasprings/banner880x428.jpeg" alt="main banner">
+                
+            </picture>
+
+            <section class="weather-overlay">
+                <h2>Weather Summary</h2>
+                <span>Currently: </span>
+                    <span class="colweight" id="current-cond"></span>
+                <span>High: </span>
+                    <span class="colweight">
+                    <span class="temp" id="temp-max"></span> &#176;F</span>
+                <span>Wind Chill: </span>
+                    <span class="colweight" id="chill"></span>
+                <span>Humidity: </span>
+                    <span class="colweight">
+                    <span id="humid"></span> %</span>
+                <span>Wind Speed: </span>
+                    <span class="colweight">
+                    <span id="wind-speed"></span> mph</span>
+
+            </section>
+        </div>
+
+        <section class="fiveDay">
+            <h3>5 Day Forecast</h3>
+            <div id="forecastGrid"></div>
+        </section>
+        <article class="article">      
+            <picture class= "img">
+                <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images-sodasprings/Soda-Springs195x130.jpeg">
+                <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images-sodasprings/Soda-Springs390x260.jpeg">
+                <img src="images-sodasprings/placeholder.png" data-src="images-sodasprings/Soda-Springs440x293.jpeg" alt="park">  
+            </picture>
+            
+            <h2>Soda Springs Complex</h2>
+                <p class="author">By Content goes here</p>
+                <p class="paragraph">Content text goes here, Content text goes here, Content text goes here, Content text goes here. Content text goes here, Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here.Content text goes here. </p><br>
+                <p class="paragraph">Content text goes here, Content text goes here, Content text goes here, Content text goes here. Content text goes here, Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here. Content text goes here."</p><br>
+
+        </article>
+        <div class="event-list">
+            <h2>Upcoming Events:</h2>
+        </div>
+        
+        <div class="contact">
+            <br>
+            <img src="images/map.jpg" alt="map of places" class="map">
+            <p class="location"><strong>Windzit</strong><br>
+                <span class="address">&#127980; 51 Main st -- Preston, ID 82367</span>
+                <br><br>
+            <span class="phone">&#128222; 123.000.1234</span>
+            <br>
+            <span class="email">&#128231; Windzit@weather.com</span>
+            <br><br>
+            <img src="images-sodasprings/instagram.png" alt="instagram">
+            <img src="images-sodasprings/facebook.png" alt="facebook">
+            <img src="images-sodasprings/youtube.png" alt="youtube">
+            <img src="images-sodasprings/twitter.png" alt="twitter">
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="lastInfo">
+            &#169; Windzit | Attributions |<br class='responsive'> Cristians Cantarero
+            <div id="updated"></div>
+    </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js-sodasprings/lazyload.js"></script>
+    <script src="js-sodasprings/sodawindchill.js"></script>
+    <script src="js-sodasprings/sodaforecast.js"></script>
+    <script src="js-sodasprings/sodaevents.js"></script>
+
+</body>
+</html>
