@@ -1,0 +1,120 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Fish Haven, Idaho</title>
+    <meta name="description" content="Cristians Cantarero. Fish Haven Page. Class: WDD230. BYU-Idaho.">
+    <link rel="shortcut icon" href="images/weather-logo.png">
+
+</head>
+<body>
+    
+    <header>
+        <picture class="img">
+            <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/weather-logo83.png">
+            <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images/weather-logo111.png">
+            <img src="images/placeholder.png" data-src="images/weather-logo.png" alt="Windzit logo">
+        </picture>
+        <section class="heading">
+            <h1>Windzit</h1>
+            <div class="moto">A bright adventure</div>
+            </section>
+        
+    </header>
+    
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h2 class="town">Fish Haven, Idaho</h2>
+        <div class="hero-div">
+            <picture class="bannerimg img">
+                <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/fishhavenbanner307x149.jpeg">
+                <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images/fishhavenbanner614x298.jpeg">
+                <img src="images/placeholder.png" data-src="images/fishhavenbanner.jpeg" alt="main banner">
+                
+            </picture>
+
+            <section class="weather-overlay">
+                <h2>Weather Summary</h2>
+                <span>Currently: </span>
+                    <span class="colweight" id="current-cond"></span>
+                <span>High: </span>
+                    <span class="colweight">
+                    <span class="temp" id="temp-max"></span> &#176;F</span>
+                <span>Wind Chill: </span>
+                    <span class="colweight" id="chill"></span>
+                <span>Humidity: </span>
+                    <span class="colweight">
+                    <span id="humid"></span> %</span>
+                <span>Wind Speed: </span>
+                    <span class="colweight">
+                    <span id="wind-speed"></span> mph</span>
+
+            </section>
+        </div>
+
+        <section class="fiveDay">
+            <h3>5 Day Forecast</h3>
+            <div id="forecastGrid"></div>
+        </section>
+        <article class="article">      
+            <picture class= "img">
+                <source media="(max-width: 640px)" srcset="images/placeholder.png" data-srcset="images/fishhaven195x130.jpeg">
+                <source media="(max-width: 961px)" srcset="images/placeholder.png" data-srcset="images/fishhaven390x260.jpeg">
+                <img src="images/placeholder.png" data-src="images/fishhaven440x293.jpeg" alt="fishhaven">  
+            </picture>
+            
+            <h2>Fish Haven, Idaho.</h2>
+                <p class="author">Content goes here.</p>
+                <p class="paragraph">Content text goes here, Content text goes here, Content text goes here, Content text goes here. Content text goes here, Content text goes here. Content text goes here. Content text goes here. Content text goes here.</p><br>
+                <p class="paragraph">Content text goes here, Content text goes here, Content text goes here, Content text goes here. Content text goes here, Content text goes here. Content text goes here. Content text goes here.<br>
+                </p>
+
+        </article>
+        <div class="event-list">
+            <h2>Upcoming Events:</h2>
+        </div>
+        <div class="contact">
+            <picture class="img">
+                <img src="images/placeholder.png" data-src="images/map.jpg" alt="map of places" class="map">
+            </picture>
+            <div class="location"><strong>Windzit</strong><br>
+                <span class="address">&#127980; 51 Main st -- Preston, ID 82367</span>
+                <span class="phone">&#128222; 123.000.1234</span>
+                <span class="email">&#128231; Windzit@weather.com</span>
+                <div class="social">
+                    <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="facebook"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+                    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="lastInfo">
+            &#169; Windzit | Attributions |<br class='responsive'> Cristians Cantarero
+            <div id="updated"></div>
+    </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/fishwindchill.js"></script>
+    <script src="js/fishforecast.js"></script>
+    <script src="js/fishevents.js"></script>
+
+</body>
+</html>

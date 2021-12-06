@@ -274,7 +274,6 @@ main p, section, article{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
 }
 .weather-overlay {
     justify-self: left;
