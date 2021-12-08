@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Sarala');
+:root{
+    --primary-color: #202020; 
+    --secondary-color: #E8EEF1; 
+    --accent1-color: #E8EEF1; 
+    --accent2-color: #4B7BF5; 
+    --background-color: #BFD7ED;
+
+    --heading-font: 'Acme', sans-serif;
+    --paragraph-font: 'Sarala', sans-serif;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+html, body {
+    background-color: var(--accent2-color);
+}
+main {
+    background-color: var(--background-color);
+}
+
+/* ------headings------ */
+
+h1{
+    font-family: var(--heading-font);
+}
+h2{
+    font-family: var(--heading-font);
+    font-size: 25px;
+}
+ p {
+     font-family: var(--paragraph-font);
+ }
+
+
+/*------header/footer items------*/
+
+header, footer {
+    background-color: var(--accent2-color);
+    padding: 1em;
+}
+footer {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+.heading h1 {
+    color: var(--secondary-color);
+    margin: 0 0 0 17px;
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-size: .7em;
+}
+div.motto {
+    font-style: italic;
+    letter-spacing: 1pt;
+    color: var(--secondary-color);
+    margin-left: 20px;
+    font-size: 1em;
+    font-family: var(--paragraph-font);
+}
+.title {
+    text-align: center;
+    padding: 1em;
+    font-size: 20px;
+    margin: 0;
+    color: var(--accent2-color);
+}
+h2.weather-head{
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+.underline{
+    text-decoration: underline;
+}
+.contact {
+    background: var(--accent1-color);
+    border: 1px solid var(--accent1-color);
+    text-align: center;
+    padding: 1em;
+}
+
+main::after{
+    content: "\A";
+    white-space: pre;
+}
+.map::after {
+    content: "\A\A";
+    white-space: pre;
+}
+.location span {
+    font-family: var(--paragraph-font);
+}
+div.location {
+    font-family: var(--heading-font);
+}
+span.address::before {
+    content: "\A\A";
+    white-space: pre;
+}
+span.phone::before {
+    content: "\A";
+    white-space: pre;
+}
+span.email::before {
+    content: "\A";
+    white-space: pre;
+}
+div.social::before {
+    content: "\A\A";
+    white-space: pre;
+}
+br.responsive{
+    display: inline;
+}
+
+
+
+
+
+/*------body items-----*/
+
+.sumRentName {
+    text-align: center;
+    font-size: 20px;
+}
+.sumRentName::before {
+    content: "\A";
+    white-space: pre;
+}
+.summaryRentals {
+    border: 3px solid black;
+}
+div.summaryRentals{
+    padding: 1em;
+}
+div.backgroundImg {
+    background-image: url('../images/beachscootsmall.jpg');
+    height: 636px;
+    width: 100%;
+}
+section.beachBkgImg {
+    background-image: url('../images/beachumbrella.small.jpg');
+    height: 100%;
+    width: 100%;
+}
+
+div.opacityImg {
+    background-image: url('../images/shoreline.jpg');
+    width: 100%;
+    height: 550px;
+}
+
+
+.summaryRentals ul li {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    list-style: none;
+}
+.attraction-lesson {
+    text-align: center;
+}
+.learn-more {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*-----table-----*/
+
+
+
+
+
+/*-----flex-----*/
+
+  /* --------forecast-------- */
+
+  .threeDay {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+}
+.threeDay::after{
+    content: "\A\A";
+    white-space: pre;
+}
+.threeDay section {
+    border: 1px solid var(--secondary-color);
+}
+#forecastGrid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 600px;
+}
+#forecastGrid h4 {
+    background-color: var(--background-color);
+    padding: .5em;
+    margin: 0;
+}
+#forecastGrid p {
+    padding: .5em;
+}
+.colweight {
+    color: black;
+    font-weight: bold;
+}
+.colweight::after{
+    content: "\A";
+    white-space: pre;
+}
+
+
+
+.right-align-box {
+    padding: 1em;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+.threeDay::before {
+    content: "\A\A";
+    white-space: pre;
+}
+.right-align-box span {
+    font-family: var(--paragraph-font);
+}
+
+
+
+
+/* --------nav------- */
+
+nav ul li a:hover{background-color: var(--background-color);}
+
+nav ul.hide {display: none;}
+
+nav ul li.active a{background-color: var(--background-color); color:#ffffff;;}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+    font-size: 20px;
+}
+nav button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+nav {
+    font-family: var(--heading-font);
+    font-size: 30px;
+    line-height: 50px;
+    border-top: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    position: relative;
+    bottom: 0;
+}
+nav ul {
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    background: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+nav a:link, nav a:visited {
+    color: var(--accent2-color);
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--primary-color);
+}
+
+
+
+/*--------rental link-------*/
+.action{
+    text-align: center;
+}
+.action::after {
+    content:"\A\A";
+    white-space: pre;
+}
+.action::before {
+    content: "\A\A";
+    white-space: pre;
+}
+.button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--accent2-color);
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: var(--paragraph-font);
+}
+
+/*--------form---------*/
+
+.res-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+h2.form-name {
+    padding-left: 2em;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--paragraph-font);
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--secondary-color);
+    padding: .5rem 2%;
+    border: none;
+}
+form legend{
+    color:  #6C240E;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+form label.top {
+    display: block;
+    padding: 1rem;
+    color: navy;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+    -webkid-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px black;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+form label.sbs {
+    display: block;
+    padding:.75rem;
+    color: black;
+}
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+form input{
+    padding: .5rem;
+}
+form select {
+    padding: .75rem;
+}
+form input.submitbutton {
+    border: none;
+    background-color:  #6C240E;
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+p.thanks {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.contact-form {
+    max-width: 647px;
+    border: 3px solid black;
+    background-image: url('../images/shipsea.jpg');
+    margin: 0 auto;
+}
+.maps {
+    border: 3px solid black;
+    max-width: 647px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: var(--accent1-color);;
+}
+p.first, p.second {
+    text-align: center;
+    padding: 1em;
+}
+.whatBox {
+    text-align: center;
+}
+
+/*-----rent table-----*/
+
+table {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+caption {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 2em;
+    padding-bottom: .25em;
+}
+th, td {
+    border: 1px solid black;
+    padding: .25em;
+}
+
+tr:nth-child(1) {
+    background-color: #335771;
+    color: white;
+}
+tr:nth-child(2), tr:nth-child(3), tr:nth-child(6), tr:nth-child(7), tr:nth-child(10), tr:nth-child(11) {
+    background-color: #8EB3CC;
+}
+tr:nth-child(4), tr:nth-child(5), tr:nth-child(8), tr:nth-child(9), tr:nth-child(12), tr:nth-child(13) {
+    background-color: #C7D9E6;
+}
+tr.display {
+    border-top-style: hidden;
+}
+.rental-melon {
+    background-color: var(--accent1-color);
+    border: 3px solid blue;
+    padding: 1em;
+}
+div.rental-melon {
+    max-width: 880px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #E3ECF2;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+
+  /* The Close Button */
+  .metroClose, .dioClose, .pcxClose, .pioneerClose, .wrangler4Close, .wrangler2Close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .metroClose:hover,
+  .metroClose:focus,
+  .dioClose:hover,
+  .dioClose:focus,
+  .pcxClose:hover,
+  .pcxClose:focus,
+  .pioneerClose:hover,
+  .pioneerClose:focus,
+  .wrangler4Close:hover,
+  .wrangler4Close:focus,
+  .wrangler2Close:hover,
+  .wrangler2Close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/*--------rental link-------*/
+.map-action{
+    text-align: center;
+}
+.map-action::after {
+    content:"\A\A";
+    white-space: pre;
+}
+.map-action::before {
+    content: "\A\A";
+    white-space: pre;
+}
+.map-button {
+    background-color: #6C240E;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: var(--paragraph-font);
+}
+
+.refImg, .refTitle {
+    padding: 1em;
+}
+.refImg::before {
+    content: "\A\A";
+    white-space: pre;
+}
+
+
+/*------slide show-----*/
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+  }
+  .slideshow-container img {
+      border: 3px solid blue;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+      left: 0;
+      border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

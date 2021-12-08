@@ -20,7 +20,7 @@ fetch(requestURL)
 
     event.appendChild(listOne);
     event.appendChild(listTwo);
-    event.appendChild(listThree);
+  
 
   
     document.querySelector('.event-list').appendChild(event);
