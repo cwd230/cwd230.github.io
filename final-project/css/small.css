@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Acme|Sarala');
 :root{
     --primary-color: #202020; 
-    --secondary-color: #E8EEF1; 
+    --secondary-color: #afd9ed; 
     --accent1-color: #E8EEF1; 
-    --accent2-color: #4B7BF5; 
-    --background-color: #BFD7ED;
+    --accent2-color: #69b702; 
+    --background-color: #E8EEF1;
 
     --heading-font: 'Acme', sans-serif;
     --paragraph-font: 'Sarala', sans-serif;
@@ -58,7 +58,7 @@ header {
     align-items: center;
 }
 .heading h1 {
-    color: var(--secondary-color);
+    color: var(--background-color);
     margin: 0 0 0 17px;
 }
 .heading {
@@ -69,7 +69,7 @@ header {
 div.motto {
     font-style: italic;
     letter-spacing: 1pt;
-    color: var(--secondary-color);
+    color: var(--background-color);
     margin-left: 20px;
     font-size: 1em;
     font-family: var(--paragraph-font);
@@ -90,8 +90,8 @@ h2.weather-head{
     text-decoration: underline;
 }
 .contact {
-    background: var(--accent1-color);
-    border: 1px solid var(--accent1-color);
+    background: var(--secondary-color);
+    border: 2px solid var(--accent2-color);
     text-align: center;
     padding: 1em;
 }
@@ -145,7 +145,7 @@ br.responsive{
     white-space: pre;
 }
 .summaryRentals {
-    border: 3px solid black;
+    border: 3px solid var(--accent2-color);
 }
 div.summaryRentals{
     padding: 1em;
@@ -202,7 +202,8 @@ div.opacityImg {
     white-space: pre;
 }
 .threeDay section {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--accent2-color);
+    background-color: var(--secondary-color);
 }
 #forecastGrid {
     display: grid;
@@ -231,7 +232,14 @@ div.opacityImg {
 
 .right-align-box {
     padding: 1em;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--accent2-color);
+    text-align: center;
+}
+.left-align-box {
+    padding: 1em;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--accent2-color);
     text-align: center;
 }
 .threeDay::before {
@@ -251,7 +259,7 @@ nav ul li a:hover{background-color: var(--background-color);}
 
 nav ul.hide {display: none;}
 
-nav ul li.active a{background-color: var(--background-color); color:#ffffff;;}
+nav ul li.active a{background-color: var(--background-color); color:var(--accent2-color);}
 
 nav ul li a {
     display: block;
@@ -264,7 +272,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
-    color: var(--secondary-color);
+    color: var(--background-color);
     font-weight: bold;
 }
 nav {
@@ -284,7 +292,7 @@ nav ul {
     padding: 0;
 }
 nav a:link, nav a:visited {
-    color: var(--accent2-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
 nav a:hover {
@@ -308,7 +316,7 @@ nav a:hover {
 .button {
     background-color: var(--secondary-color);
     border: none;
-    color: var(--accent2-color);
+    color: var(--primary-color);
     padding: 20px 34px;
     text-align: center;
     text-decoration: none;
@@ -324,10 +332,11 @@ nav a:hover {
 .res-form {
     max-width: 1000px;
     margin: 0 auto;
-    border: 3px solid black;
+    border: 3px solid var(--accent2-color);
 }
 h2.form-name {
     padding-left: 2em;
+    color: var(--accent1-color);
 }
 form{
     display: flex;
@@ -342,7 +351,7 @@ form fieldset {
     border: none;
 }
 form legend{
-    color:  #6C240E;
+    color: var(--primary-color);
     margin: 0 1rem;
     padding: 0 .5rem;
     font-size: 1.5rem;
@@ -350,7 +359,7 @@ form legend{
 form label.top {
     display: block;
     padding: 1rem;
-    color: navy;
+    color: solid var(--primary-color);
     font-size: 1rem;
 }
 
@@ -381,9 +390,9 @@ form select {
     padding: .75rem;
 }
 form input.submitbutton {
-    border: none;
-    background-color:  #6C240E;
-    color: white;
+    border: 1px solid var(--accent2-color);
+    background-color:  #cae3f3;
+    color: var(--primary-color);
     border-radius: 1rem;
     padding: 1rem;
     margin: 0 0 2rem 2%;
@@ -399,16 +408,16 @@ p.thanks {
 
 .contact-form {
     max-width: 647px;
-    border: 3px solid black;
+    border: 3px solid var(--accent2-color);
     background-image: url('../images/shipsea.jpg');
     margin: 0 auto;
 }
 .maps {
-    border: 3px solid black;
+    border: 3px solid var(--accent2-color);
     max-width: 647px;
     margin: 0 auto;
     padding: 1em;
-    background-color: var(--accent1-color);;
+    background-color: var(--secondary-color);;
 }
 p.first, p.second {
     text-align: center;
@@ -452,8 +461,8 @@ tr.display {
     border-top-style: hidden;
 }
 .rental-melon {
-    background-color: var(--accent1-color);
-    border: 3px solid blue;
+    background-color: var(--secondary-color);
+    border: 3px solid var(--accent2-color);
     padding: 1em;
 }
 div.rental-melon {
@@ -478,7 +487,7 @@ div.rental-melon {
     background-color: #E3ECF2;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #69b702;
     width: 80%;
   }
 
@@ -522,7 +531,7 @@ div.rental-melon {
     white-space: pre;
 }
 .map-button {
-    background-color: #6C240E;
+    background-color: rgb(2, 137, 247);
     border: none;
     color: white;
     padding: 20px 34px;
@@ -555,7 +564,7 @@ div.rental-melon {
     padding: 1em;
   }
   .slideshow-container img {
-      border: 3px solid blue;
+      border: 3px solid var(--accent2-color);
   }
   
   /* Hide the images by default */
